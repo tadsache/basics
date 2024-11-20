@@ -132,4 +132,7 @@ logi - logs
 tempo - traces
 können mit in diesem setup erweitert werden 
 
+# Docker Compose 
+anstatt alle container einzeln zu starten screibe ein docker compose file
+um das setup automatisch zu generieren 
 
