@@ -67,5 +67,33 @@ versuche dich per ssh vom controller auf den target container zu verbinden
 ssh root password ist: password 
 wenn das klappt versuche per ansible ein directory vom controller auf den target container zu erstellen. 
 
-- wenn du nicht weiter kommst oder fertig bist switche zu branch 02-ansible-2 
+### ssh connection 
+on controller 
+bin/bash# ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -N ""
+bin/bash# ssh-copy-id -i ~/.ssh/id_rsa.pub root@<target-name>  
+// password ist: password 
+bin/bash# service ssh start 
 
+on target 
+bin/bash# service ssh start 
+
+was passiert hier? 
+
+now connect per ssh vom controller auf target
+bin/bash# ssh root@<target-name> 
+
+### ansible 
+anstatt die ansible task auf localhost auszuführen
+erstelle ein inventory directory in deinem ansible projekt in deiner ide 
+was ist ein inventory?
+
+erstelle ein test directory in deinem inventory und trage deinen target host ein,
+
+jetzt versuche deine task zum erstellen eines directorys auf den target container auszuführen. 
+// der aufbau ist in /ansible-automation ordner zur hilfe abgelegt. 
+
+teste die inventorys aus und geniere unterschiedliche inventories und erstelle noch mehr target container 
+vielleicht erweitere das ansible das es noch mehr macht als nur ein directory zu erstellen 
+notiere deine ergebnisse 
+
+weiter gehts auf dem branch 03-api 
