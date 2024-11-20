@@ -64,6 +64,7 @@ wie funktioniert ein docker network?
 finde die ip adressen der beiden container raus? 
 
 versuche dich per ssh vom controller auf den target container zu verbinden 
+ssh root password ist: password 
 wenn das klappt versuche per ansible ein directory vom controller auf den target container zu erstellen. 
 
 - wenn du nicht weiter kommst oder fertig bist switche zu branch 02-ansible-2 
