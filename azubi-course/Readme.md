@@ -97,3 +97,14 @@ vielleicht erweitere das ansible das es noch mehr macht als nur ein directory zu
 notiere deine ergebnisse 
 
 weiter gehts auf dem branch 03-api 
+
+# API Project
+was ist eine API?
+
+aufgabe programmiere eine simple REST API in einer beliebigen progammiersprache
+und dockerisiere die application 
+
+in /simple-api ist ein ganz einfaches Flask Beispiel 
+aufpassen beim dockerisieren den port mit frei zu geben, 
+
+
