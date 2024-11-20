@@ -107,4 +107,29 @@ und dockerisiere die application
 in /simple-api ist ein ganz einfaches Flask Beispiel 
 aufpassen beim dockerisieren den port mit frei zu geben, 
 
+# Observerbilty 
+applicationen monitoren wir in der mfe mit dem LGTM (loki,grafana,tempo,mimir) stack 
+
+## Prometheus 
+was ist eine Metric?
+was macht Prometheus? 
+
+### hands on 
+1. baue in die api einen Prometheus endpunkt mit ein um deine app zu monitoren 
+2. starte prometheus als container und guck dir deine metriken im prometheus an 
+
+## Grafana 
+grafana ist die visualisierungs application für unterschiedliche data sourcen wie auch
+prometheus 
+
+### hands on 
+1. pull und starte grafana als container 
+2. verbinde die prometheus datasource mit grafana 
+3. baue ein dashboard um die metriken der api anzeigen zu lassen 
+
+## more 
+logi - logs 
+tempo - traces
+können mit in diesem setup erweitert werden 
+
 
