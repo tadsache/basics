@@ -1,0 +1,11 @@
+---
+- name: create dir on target host 
+  hosts: TARGET  #localhost 
+  # become: yes  # Optional: Use if you need administrative privileges
+  tasks:
+    - name: create directory 
+      file:
+        path: "/tmp/tadewashere"
+        state: directory
+        mode: '0755'  
+
