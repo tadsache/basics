@@ -31,7 +31,10 @@ wenn das geklappt hat, erweite das dockerfile mit
 - ansible
 - ssh (openssh-server) 
 
-wenn es garnicht funktioniert, switch zu branch "01-dockerfile-help"
+try to run das dockerfile auf diesen branch, wenn der bosch proxy einen auf gandalf you shall not pass macht
+pull das image hier <ubuntu-ansible-image>
+
+
 
 
 
